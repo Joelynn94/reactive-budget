@@ -1,11 +1,14 @@
 import React from 'react'
+import Header from './components/Header'
+import Balance from './components/Balance'
 import './App.css'
 
 const App = () => {
     return (
         <div className="container">
             <div className="app-wrapper">
-                <h1>Budget App</h1>
+                <Header />
+                <Balance />
             </div>
         </div>
     )
