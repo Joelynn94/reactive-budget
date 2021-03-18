@@ -8,19 +8,19 @@ import { GlobalContextProvider } from './context/GlobalState';
 import './App.css';
 
 const App = () => {
-    return (
-        <GlobalContextProvider>
-            <div className="container">
-                <div className="app-wrapper">
-                    <Header />
-                    <Balance />
-                    <AddTransaction />
-                    <IncomeList />
-                    <ExpenseList />
-                </div>
-            </div>
-        </GlobalContextProvider>
-    );
+  return (
+    <GlobalContextProvider>
+      <div className='container'>
+        <div className='app-wrapper'>
+          <Header />
+          <Balance />
+          <AddTransaction />
+          <IncomeList />
+          <ExpenseList />
+        </div>
+      </div>
+    </GlobalContextProvider>
+  );
 };
 
 export default App;
