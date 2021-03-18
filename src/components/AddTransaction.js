@@ -27,6 +27,8 @@ const AddTransaction = () => {
       incomeAmount: parseInt(incomeAmount),
     };
 
+    console.log(newIncomeTransaction);
+
     addIncome(newIncomeTransaction);
 
     setIncome({
@@ -57,9 +59,11 @@ const AddTransaction = () => {
       expenseAmount: parseInt(expenseAmount),
     };
 
+    console.log(newExpenseTransaction);
+
     addExpense(newExpenseTransaction);
 
-    setIncome({
+    setExpense({
       expenseText: '',
       expenseAmount: 0,
     });
@@ -72,6 +76,7 @@ const AddTransaction = () => {
           <input
             type='text'
             name='incomeText'
+            value={incomeText}
             placeholder='Add income'
             autoComplete='off'
             onChange={onChangeIncome}
@@ -79,6 +84,7 @@ const AddTransaction = () => {
           <input
             type='number'
             name='incomeAmount'
+            value={incomeAmount}
             placeholder='Amount'
             autoComplete='off'
             onChange={onChangeIncome}
@@ -92,6 +98,7 @@ const AddTransaction = () => {
           <input
             type='text'
             name='expenseText'
+            value={expenseText}
             placeholder='Add Expense'
             autoComplete='off'
             onChange={onChangeExpense}
@@ -99,6 +106,7 @@ const AddTransaction = () => {
           <input
             type='number'
             name='expenseAmount'
+            value={expenseAmount}
             placeholder='Amount'
             autoComplete='off'
             onChange={onChangeExpense}
